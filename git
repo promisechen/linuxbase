@@ -1,3 +1,5 @@
+提交文件方法：每次都要 git add xxx   git commit -m 'xxx' git push origin master
+
 git add <filename>
 git add *
 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：
@@ -7,5 +9,5 @@ git commit -m "代码提交信息"
 git push origin master
 
 
-[root@localhost baselinux]# git remote add origin git@github.com:promisechen/linuxbase.git
-[root@localhost baselinux]# git push -u origin master
+git remote add origin git@github.com:promisechen/linuxbase.git
+git push -u origin master
