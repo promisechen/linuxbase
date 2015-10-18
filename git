@@ -1,0 +1,2 @@
+[root@localhost baselinux]# git remote add origin git@github.com:promisechen/linuxbase.git
+[root@localhost baselinux]# git push -u origin master
