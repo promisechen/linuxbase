@@ -1,3 +1,7 @@
+每次链接需要 执行下面几句
+eval "$(ssh-agent -s)"
+ssh-add github.key
+git push -u origin master
 
 git remote add origin git@github.com:promisechen/linuxbase.git
 git push -u origin master
