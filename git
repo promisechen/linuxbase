@@ -1,3 +1,11 @@
+
+vim ~/.git-credentials
+
+https://{username}:{password}@github.com
+
+git config --global credential.helper store
+git push -u origin master
+
 每次链接需要 执行下面几句
 eval "$(ssh-agent -s)"
 ssh-add github.key
