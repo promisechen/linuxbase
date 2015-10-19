@@ -1,11 +1,14 @@
-
+1.https方式：
+a.设置用户名密码
 vim ~/.git-credentials
-
 https://{username}:{password}@github.com
-
 git config --global credential.helper store
 git push -u origin master
 
+b.git remote add origin https://github.com/promisechen/dpdk.git
+git push -u origin master
+
+2.ssh方式:
 每次链接需要 执行下面几句
 eval "$(ssh-agent -s)"
 ssh-add github.key
@@ -15,7 +18,7 @@ git remote add origin git@github.com:promisechen/linuxbase.git
 git push -u origin master
 提交文件方法：每次都要 git add xxx   git commit -m 'xxx' git push origin master
 
-git add <filename>
+3.git add <filename>
 git add *
 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：
 git commit -m "代码提交信息"
@@ -23,9 +26,7 @@ git commit -m "代码提交信息"
 你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库：
 git push origin master
 
-
-
-添加文件夹
+4.添加文件夹
 先添加一个文件
 git add --all code2/test
 git commit -m 's'
@@ -34,3 +35,5 @@ git push -u origin master
 git add --all code2/*
 git commit -m 's'
 git push -u origin master
+
+5.
