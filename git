@@ -1,3 +1,6 @@
+
+git remote add origin git@github.com:promisechen/linuxbase.git
+git push -u origin master
 提交文件方法：每次都要 git add xxx   git commit -m 'xxx' git push origin master
 
 git add <filename>
@@ -9,5 +12,13 @@ git commit -m "代码提交信息"
 git push origin master
 
 
-git remote add origin git@github.com:promisechen/linuxbase.git
+
+添加文件夹
+先添加一个文件
+git add --all code2/test
+git commit -m 's'
+git push -u origin master
+在添加一个文件夹
+git add --all code2/*
+git commit -m 's'
 git push -u origin master
