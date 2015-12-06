@@ -1,6 +1,10 @@
-
-
-
+＃snprintf
+＃＃
+注意：snprintf返回的值是欲写入的字符。
+＃＃
+当i=7时，写入1个字符。即写入了‘\0’
+当i=8时，益处了。“123456789”将写入buf+63+9的地址空间中。最终导致堆内存破坏。
+＃＃
 `[root@localhost git]# ./a.out
 
 i= 0 usedlen=   9 leftlen=                  64 buf=123456789 pbuf+72=�
