@@ -1,5 +1,7 @@
 
-ot@localhost git]# ./a.out
+
+
+`[root@localhost git]# ./a.out
 i= 0 usedlen=   9 leftlen=                  64 buf=123456789 pbuf+72=�
 i= 1 usedlen=  18 leftlen=                  55 buf=123456789123456789 pbuf+72=�
 i= 2 usedlen=  27 leftlen=                  46 buf=123456789123456789123456789 pbuf+72=�
@@ -43,4 +45,4 @@ i=14 usedlen= 135 leftlen=                 -62 buf=12345678912345678912345678912
 7fca39cdb000-7fca39cdc000 rw-p 00000000 00:00 0
 7fff662e5000-7fff66306000 rw-p 00000000 00:00 0                          [stack]
 7fff66327000-7fff66329000 r-xp 00000000 00:00 0                          [vdso]
-ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]`
