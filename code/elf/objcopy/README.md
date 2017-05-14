@@ -34,7 +34,7 @@ elf64-x86-64 elf32-i386 elf32-x86-64 a.out-i386-linux pei-i386 pei-x86-64 elf64-
 ```
 -B 的参数是体系结构，但在帮助手册中都没有相关介绍。        
 可以执行objdump -s /bin/ls  可以看到体系解构。      
-似乎一般可能在 intel 的cpu 64位就是i386:x86-64 32位就是i386      
-参考文章：   
-[用objcopy把调试信息放到单独的文件中](http://blog.csdn.net/someonea/article/details/3202409)
-[c++ 符号表分离———objcopy(调试信息挂载)](http://blog.csdn.net/cyteven/article/details/13015511)
+似乎一般可能在 intel 的cpu 64位就是i386:x86-64 32位就是i386       
+参考文章：     
+[用objcopy把调试信息放到单独的文件中](http://blog.csdn.net/someonea/article/details/3202409)       
+[c++ 符号表分离———objcopy(调试信息挂载)](http://blog.csdn.net/cyteven/article/details/13015511)    
