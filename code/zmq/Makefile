@@ -21,10 +21,10 @@ CXXFLAGS += -lzmq
 LDFLAGS += 
 
 $(target): 
-	$(CC) -o s_dealer s_dealer.c $(CXXFLAGS)
-	$(CC) -o c_dealer c_dealer.c $(CXXFLAGS)
-	$(CC) -o s_rep s_rep.c $(CXXFLAGS)
-	$(CC) -o c_req c_req.c $(CXXFLAGS)
+	$(CC) -g -o s_dealer s_dealer.c $(CXXFLAGS)
+	$(CC) -g -o c_dealer c_dealer.c $(CXXFLAGS)
+	$(CC) -g -o s_rep s_rep.c $(CXXFLAGS)
+	$(CC) -g -o c_req c_req.c $(CXXFLAGS)
 
 install:
 	
