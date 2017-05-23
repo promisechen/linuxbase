@@ -15,7 +15,7 @@ int main(int argc, char * argv[])
     }
     //创建zmq socket ，socket目前有6中属性 ，这里使用dealer方式
     //具体使用方式请参考zmq官方文档（zmq手册） 
-    if((pSock = zmq_socket(pCtx, ZMQ_REP)) == NULL)
+    if((pSock = zmq_socket(pCtx, ZMQ_DEALER)) == NULL)
     {
         zmq_ctx_destroy(pCtx);
         return 0;

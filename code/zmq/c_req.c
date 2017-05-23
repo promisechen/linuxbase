@@ -47,8 +47,8 @@ int main (int argc,char ** argv)
         memset(jsonRecv,0,sizeof(char)*FILESIZE); 
         // hello
         strcpy(jsonSend,"hello");
-        zmq_msg_init_size (&request,FILESIZE);
-        memcpy (zmq_msg_data (&request), jsonSend, strlen(jsonSend));
+        zmq_msg_init_size (&request,strlen(jsonSend)+1);
+        memcpy (zmq_msg_data (&request), jsonSend, strlen(jsonSend)+1);
         printf ("send %d:%s\n",strlen(jsonSend),zmq_msg_data (&request));
         zmq_msg_send (&request,requester, 0);
         zmq_msg_close (&request);
@@ -61,9 +61,9 @@ int main (int argc,char ** argv)
 
         printf(".........................................\n");
         readjson(argv[1],jsonSend);
-        zmq_msg_init_size (&request,FILESIZE);
-        memcpy (zmq_msg_data (&request), jsonSend, strlen(jsonSend));
-        printf ("send %d:%s\n",strlen(jsonSend),zmq_msg_data (&request));
+        zmq_msg_init_size (&request,strlen(jsonSend)+1);
+        memcpy (zmq_msg_data (&request), jsonSend, strlen(jsonSend)+1);
+        printf ("send %d:%s\n",strlen(jsonSend)+1,zmq_msg_data (&request));
         zmq_msg_send (&request,requester, 0);
         zmq_msg_close (&request);
 

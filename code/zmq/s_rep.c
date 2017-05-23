@@ -57,10 +57,10 @@ int main (int argc,char ** argv)
         sleep (1);
 
         //  返回应答
-        strcpy(jsonSend,"hello");
-        zmq_msg_init_size (&reply, FILESIZE);
-        memcpy (zmq_msg_data (&reply), jsonSend, strlen(jsonSend));
-        printf ("send %d:%s\n",strlen(jsonSend),zmq_msg_data (&reply));
+        strcpy(jsonSend,"world");
+        zmq_msg_init_size (&reply, sizeof("world"));
+        memcpy (zmq_msg_data (&reply), jsonSend, sizeof("world"));
+        printf ("send %d:%s\n",sizeof("world"),zmq_msg_data (&reply));
         zmq_msg_send (&reply,responder,0);
         zmq_msg_close (&reply);
 
@@ -76,9 +76,9 @@ int main (int argc,char ** argv)
         sleep (1);
  
         readjson(argv[1],jsonSend);
-        zmq_msg_init_size (&reply, FILESIZE);
-        memcpy (zmq_msg_data (&reply), jsonSend, strlen(jsonSend));
-        printf ("send %d:%s\n",strlen(jsonSend),zmq_msg_data (&reply));
+        zmq_msg_init_size (&reply, strlen(jsonSend)+1);
+        memcpy (zmq_msg_data (&reply), jsonSend, strlen(jsonSend)+1);
+        printf ("send %d:%s\n",strlen(jsonSend)+1,zmq_msg_data (&reply));
         zmq_msg_send (&reply,responder,0);
         zmq_msg_close (&reply);
 

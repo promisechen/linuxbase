@@ -16,7 +16,7 @@ int main(int argc, char * argv[])
         return 0;
     }
     //´´½¨socket 
-    if((pSock = zmq_socket(pCtx, ZMQ_REQ)) == NULL)
+    if((pSock = zmq_socket(pCtx, ZMQ_DEALER)) == NULL)
     {
         zmq_ctx_destroy(pCtx);
         return 0;
