@@ -1,3 +1,20 @@
+Linux程序调试--查看二进制文件
+http://blog.sina.com.cn/s/blog_7a2fc53a0100y54h.html
+該如何用最簡單的方式來將 JPEG image 植入執行檔呢？
+http://blog.linux.org.tw/~jserv/archives/001767.html
+-----------------------------
+  c/c++字符串混淆方案总结
+ http://blog.csdn.net/wangbaochu/article/details/45370397
+ 如何弄乱或者加密(主要为了保护)C/C++的源代码？
+ http://bbs.csdn.net/topics/390672565
+ http://stunnix.com/prod/cxxo/
+ ----------------------------------
+ 用objcopy把调试信息放到单独的文件中   
+ http://blog.csdn.net/someonea/article/details/3202409
+ c++ 符号表分离———objcopy(调试信息挂载)
+ http://blog.csdn.net/cyteven/article/details/13015511
+ 
+
 # 如何将资源文件打入程序中
 
 testfile是资源文件，objcopy.c演示如何引用。  
