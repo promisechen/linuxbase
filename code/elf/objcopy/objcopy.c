@@ -19,6 +19,7 @@ extern char _binary_## name ##_size[];\
 main()
 {
     UNZIP_FILE(testfile,"a2.tar.gz");
+     
     getchar();
     remove("a2.tar.gz");
 }
